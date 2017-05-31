@@ -1,0 +1,71 @@
+1. Algoritmo "Numero10"
+var
+cont, i, s, n, md:real
+Inicio
+cont:= 0
+i:= 1
+repita
+escreva ("Digite o", i, "valor")
+leia (n)
+s := s + n
+cont := cont + 1
+i:= i + 1
+ate (cont=10)
+md:= (soma/10)
+escreva ("Soma total:", s)
+escreva ("Média:", media)
+fimalgoritmo
+
+2. Algoritmo "10numeros"
+var
+s, n, maiorn, menorn:inteiro
+Inicio
+s:= 0
+maiorn:= 0
+menorn:= 0
+enquanto soma <> 100 faca
+escreva ("Digite um valor inteiro: ")
+leia (n)
+s:= s + n
+se (n > maiorn) entao
+maiorn := n
+fimse
+se (n < menorn) entao
+menorn := n
+fimse
+escreva (soma)
+fimenquanto
+escreva ("Menor numero: ", menorn)
+escreva ("Maior numero: ", maiorn)
+fimalgoritmo
+
+3. Algoritmo "Numeros10"
+var
+numero, soma, nmaior, nmenor:inteiro
+Inicio
+Escreva ("Digite um numero: ")
+leia (numero)
+nmaior:= numero
+nmenor:= numero
+soma:= numero
+se (numero = 100) ou (numero = 0) entao
+escreva ("O total da soma é: ", soma ,"e o maior numero digitado é ", nmaior,"e o menor numero foi ", nmenor)
+senao
+enquanto (numero <> 100) e (numero <> 0) faca
+se soma > 100 entao
+soma:= 0
+fimse
+enquanto (soma < 100) e (numero <> 0) faca
+Escreva ("Digite um numero: ")
+leia (numero)
+se (numero < nmenor) entao
+nmaior:= numero
+senao
+se (numero > nmaior)
+nmaior:= numero
+fimse
+fimse
+soma:= numero+soma
+fimenquanto
+fimenquanto
+escreva ("O total da soma é: ", soma ,"e o maior numero digitado é ", nmaior,"e o menor numero foi ", nmenor) 

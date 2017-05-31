@@ -1,0 +1,195 @@
+1- Algoritmo "entre"
+var
+n1:real
+Inicio
+Escreval ("Digite o seu número:")
+leia (n1)
+se (n1>100) e (n1<1000) entao
+Escreval ("Este numero esta entre 100 e 1000")
+senao
+Escreval ("Este número não está entre 100 e 1000")
+fimse
+FimAlgoritmo
+
+2- Algoritmo "salariofun"
+var
+c1, salario, md: real
+Inicio
+Escreval ("Digite 1 para técnico ou 2 para gerente, outros digite 3")
+leia (c1)
+Escreval ("Digite seu salário:")
+leia (salario)
+se (c1=1) entao
+md := (salario+(salario*0.50))
+Escreval ("Salário reajustado para:", md)
+fimse
+se (c1=2) entao
+md := (salario+(salario*0.30))
+Escreval ("Salário reajustado para:", md)
+fimse
+se (c1=3) entao
+md := (salario+(salario*0.20))
+Escreval ("Salário reajustado para:", md)
+fimse
+FimAlgoritmo
+
+3- Algoritmo "maior"
+var 
+n1, md: real
+Inicio
+Escreval ("Digite o seu número:")
+leia (n1)
+se (n1>30) entao
+md := n1/2
+Escreval ("Seu número é maior que 30 e a metade dele é:", md)
+senao
+md := n1*2
+Escreval ("Seu número é menor que 30 e o dobro dele é:", md)
+fimse
+FimAlgoritmo
+
+4- Algoritmo "tresnumeros"
+var
+n1, n2, n3, md: real
+Inicio
+Escreval ("Escreva o seu número:")
+leia (n1)
+Escreval ("Escreva o seu número:")
+leia (n2)
+Escreval ("Escreva o seu número:")
+leia (n3)
+md := n1+n2+n3
+se (md>50) entao
+Escreval ("A soma dos tres números é maior que 50:", md)
+senao
+Escreval ("A soma dos tres números é menor que 50:", md)
+fimse
+FimAlgoritmo
+
+5- Algoritmo "adicao"
+var
+n1, n2, md, md2:real
+Inicio
+Escreval ("Digite seu valor:")
+leia (n1)
+Escreval ("Digite seu valor:")
+leia (n2)
+md := n1+n2
+se (md>20) entao
+md2 := md+8
+Escreval ("Seu valor é maior que 20:", md2)
+senao
+md2 := md-5
+Escreval ("Seu valor é menor que 20:", md2)
+fimse
+FimAlgoritmo
+
+6- Algoritmo "estados"
+var
+estado:caracter
+Inicio
+Escreval ("Digite R para RS, S para SC, P para Parana ou O para outros estados:")
+leia (estado)
+se (estado=R) entao
+Escreval ("Se R Gaúcho")
+fimse
+se (estado=S) entao
+Escreval ("Se S Catarinense")
+fimse
+se (estado=P) entao
+Escreval ("Se P Paranaense)
+fimse
+se (estado=O) entao
+Escreval ("Outros estados")
+fimse
+FimAlgoritmo
+
+7- Algoritmo "Carro"
+var
+carro: caracter
+km, md: real
+Inicio
+Escreval ("Tipo A = 8km, Tipo B = 9km, Tipo C = 12km")
+Escreval ("Digite qual tipo do seu carro: A, B ou C")
+leia (carro)
+Escreval ("Digite a quilometragem:")
+leia (km)
+se (carro=A) entao
+md := km/8
+Escreval ("Consumo estimado para:", md)
+fimse
+se (carro=B) entao
+md := km/9
+Escreval ("Consumo estimado para:", md)
+fimse
+se (carro=C) entao
+md := km/12
+Escreval ("Consumo estimado para:", md)
+fimse
+FimAlgoritmo
+
+8- Algoritmo "validade"
+var
+senha:real
+Inicio
+Escreval ("Digite sua senha:")
+leia (senha)
+se senha=1234 entao
+Escreval ("ACESSO PERMITIDO!")
+senao 
+Escreval ("ACESSO NEGADO!")
+fimse
+FimAlgoritmo
+
+9- Algoritmo "apples"
+var
+n1, md:real
+Inicio
+Escreval ("Quantas maçãs deseja comprar?")
+leia (n1)
+se (n1<12) entao
+md := n1*1.30
+Escreval ("Você irá pagar", md)
+senao
+md := n1*1
+Escreval ("Você irá pagar", md)
+fimse
+FimAlgoritmo
+
+10- Algoritmo "conta"
+var
+nconta, saldo, debito, credito, md: real
+Inicio
+Escreval ("Digite o número da sua conta:")
+leia (nconta)
+Escreval ("Digite seu saldo:")
+leia (saldo)
+Escreval ("Digite seu debito:")
+leia (debito)
+Escreval ("Digite seu crédito:")
+leia (credito)
+md := saldo - debito + credito
+se (md>0) entao
+Escreval ("Saldo Positivo!")
+senao
+Escreval ("Saldo Negativo!")
+fimse
+FimAlgoritmo
+
+11- Algoritmo "estoque"
+var
+qest, qmax, qmin, md:real
+Inicio
+Escreval ("Quantidade atual em estoque:")
+leia (qest)
+Escreval ("Quantidade máxima no estoque:")
+leia (qmax)
+Escreval ("Quantidade mínima em estoque:")
+leia (qmin)
+md := (qmax + qmin)/2
+se (md>=qest) entao
+Escreval ("Não efetuar compra")
+senao
+Escreval ("Efetuar compra")
+fimse
+FimAlgoritmo

@@ -1,0 +1,68 @@
+Algoritmo "Atv1"
+var
+cont, soma, numero, menor, maior: inteiro
+Inicio
+cont:=0
+menor:= 100
+maior:= 0
+soma:= 0
+repita
+Escreval ("Digite um numero:")
+leia (numero)
+soma:= soma+numero
+cont:= cont+1
+se (numero>maior) entao
+maior:=numero
+fimse
+se (numero<menor) entao
+menor:= numero
+fimse
+ate que (soma=100) ou (numero=0) ou (cont=13)
+Escreval ("Maior numero é:", maior)
+Escreval ("Menor numero é:", menor)
+fimalgoritmo
+
+Algoritmo "Atv2"
+var
+n, n2, n3, soma, n4, n5, n6:real
+Inicio
+Escreval ("Digite valor de 1 a 3: ")
+leia(n)
+se (n=1) entao
+leia (n2)
+leia (n3)
+soma:= n + n2 +  n3
+Escreval ("Soma dos numeros:", soma)
+fimse
+se (n=2) entao
+leia (n4)
+leia (n5)
+leia (n6)
+soma:= n+ n4 + n5 + n6
+Escreval ("Soma dos numeros:", soma)
+fimse
+se n=3 entao
+fimalgoritmo
+fimse
+fimalgoritmo
+
+Algoritmo "Atv3"
+var
+n, n2, maior, menor, soma, cont:inteiro
+Inicio
+Escreval ("Digite um valor de 0 a 10:")
+leia(n)
+se (n>10) ou (n<0) entao
+Escreval ("Digite apenas valores de 0 a 10!")
+fimalgoritmo
+fimse
+Escreval ("Digite um valor de 0 a 10:")
+leia(n2)
+se (n2>10) ou (n2<0) entao
+Escreval ("Digite apenas valores de 0 a 10!")
+fimalgoritmo
+fimse
+soma:= n + n2
+Escreval ("A soma dos valores é: ", soma)
+fimalgoritmo
+

@@ -1,0 +1,156 @@
+1) Algoritmo "computador"
+var
+pfab, pf: real
+Inicio
+i<- 0,30
+r<- 0,10
+Escreva ("Digite o preço de fábrica:")
+leia (pfab)
+pf := pfab + pfab*i + pfab*r
+Escreva ("Preço final do produto: ", pf)
+FimAlgoritmo
+
+2) Algoritmo "Media"
+var
+n1, n2, n3, media: inteiro
+
+Inicio
+Escreva ("Digite o 1 valor:")
+leia (n1)
+Escreva ("Digite o 2 valor:")
+leia (n2)
+Escreva ("Digite o 3 valor:")
+leia (n3)
+media := (n1 + n2 + n3)/3
+Escreva ("A média final do seu valor é: ", media)
+FimAlgoritmo
+
+3) Algoritmo "tempo"
+var
+tgasto, vmedia, lg:real
+Inicio
+Escreva ("Digite a velocidade média:")
+leia (vmedia)
+Escreva ("Digite o tempo gasto:")
+leia (tgasto)
+lg:= (vmedia * tgasto)/12
+Escreva ("Listros Gastos: ", lg)
+FimAlgoritmo
+
+4)Algoritmo "div"
+var
+n1, n2, media, media2:real
+Inicio
+Escreva ("Digite o 1 valor: ")
+leia (n1)
+Escreva ("Digite o 2 valor: ")
+leia (n2)
+media := n1/n2
+Escreva ("O quociente da equação é: ", media)
+media2 := n1 mod n2
+Escreva ("O resto da equação é: ", media2)
+FimAlgoritmo
+
+5)Algoritmo "medias"
+var
+n1, n2, n3, mediaa, mediah:real
+Inicio
+Escreval ("Digite o primeiro numero:")
+leia (n1)
+Escreval ("Digite o segundo numero:")
+leia (n2)
+Escreval ("Digite o terceiro numero:")
+leia (n3)
+mediaa := (n1 + n2 + n3)/3
+Escreval ("Média aritmética: ", mediaa)
+mediah := 3/(1/n1 + 1/n2 + 1/n3)
+Escreval ("Media Harmonica: ", mediah)
+FimAlgoritmo
+
+
+6) Algoritmo "Contas"
+var
+n1, n2, n3, m, s, sub, total:real
+Inicio
+Escreval ("Digite o primeiro valor:")
+leia (n1)
+Escreval ("Digite o segundo valor:")
+leia (n2)
+Escreval ("Digite o terceiro valor:")
+leia (n3)
+m := n1 * n2 * n3
+Escreval ("Resultado da multiplicação:", m)
+s := n1 + n2 + n3
+Escreval ("Resultado da soma:", s)
+sub := n1 - n2 - n3
+Escreval ("Resultado da subtração:", sub)
+total := m + s + sub
+Escreval ("Total de todos resultados: ", total)
+FimAlgoritmo
+
+7) Algoritmo "mediaaritmetica"
+var
+n1, n2, n3, n4, n5, media:inteiro
+Inicio
+Escreval ("Digite o primeiro numero:")
+leia (n1)
+Escreval ("Digite o segundo numero:")
+leia (n2)
+Escreval ("Digite o terceiro numero:")
+leia (n3)
+Escreval ("Digite o quarto numero:")
+leia (n4)
+Escreval ("Digite o quinto numero:")
+leia (n5)
+media := (n1 + n2 + n3 + n4 + n5)/5
+Escreva ("Resultado da média: ", media)
+FimAlgoritmo
+
+8) Algoritmo "Lata"
+var
+vl, h, ra, ab, al, at, c, p, qt, lt:real
+Inicio
+vl<- 150
+p<- 3,14
+lt<- 5*3
+Escreval ("Valor do raio:")
+leia (ra)
+Escreval ("Valor da altura:")
+leia (h)
+ab := p * ra * 2
+al := 2 * p*ra*h
+at := ab + al
+c := (at/lt)*vl
+qt := at/lt
+Escreval ("O custo srá de R$", c:2 "com", qt:1)
+FimAlgoritmo
+
+9) Algoritmo "Computador"
+var
+pf, pfab, media:real
+Inicio
+i<- 0,45
+r<- 0,28
+Escreva ("Digite o valor de fábrica:")
+leia (pfab)
+pf := pfab + pfab*i + pfab*r
+Escreva ("Valor final do computador:", pf)
+Fimalgoritmo
+
+10) Algoritmo "vendedor"
+var
+vend, salario, carros, vcarros, media, mediat:real
+Inicio
+Escreva ("Digite o numero do vendedor:")
+leia (vend)
+Escrevall ("Digite o salário fixo:")
+leia (salario)
+Escreva ("Digite o numero de carros vendidos:")
+leia (carros)
+Escreval ("Digite o valor que recebe por carro:")
+leia (vcarros)
+media := carros * vcarros
+mediat := salario + media
+Escreval ("Numero do vendedor:", vend)
+Escreval ("Salário final: ", mediat)
+FimAlgoritmo

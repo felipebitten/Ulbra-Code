@@ -1,0 +1,274 @@
+1) algoritmo "maior"
+var
+a, b: real
+Inicio
+ Escreval ("Digite o primeiro valor:")
+ leia (a)
+ Escreval ("Digite o segundo valor:")
+ leia (b)
+se (a>b) entao
+a := a + 100
+Escreval ("Resultado do primeiro valor:", a)
+ senao
+b := b + 100
+Escreval ("Resultado do segundo valor:", b)
+fimse
+fimalgoritmo
+
+2) Algoritmo "idade"
+var
+idade: inteiro
+Inicio
+ Escreval ("Digite sua idade:")
+ leia (idade)
+se (idade>18) entao
+Escreval ("Você é maior de idade!")
+ senao
+Escreval ("Você não é maior de idade!")
+fimse
+FimAlgoritmo
+
+3) Algoritmo "menormaior"
+var
+n1, n2, md: real
+Inicio
+ Escreval ("Escreva o primeiro valor:")
+ leia (n1)
+ Escreval ("Escreva o segundo valor:")
+ leia (n2)
+se (n1>n2) entao
+md:= n1 - n2
+Escreval ("A diferença do maior pelo menor:", md)
+ senao
+md:= n2 - n1
+Escreval ("A diferença do maior pelo menor:", md)
+fimse
+Fimalgoritmo
+
+4) Algoritmo "posnegparimpar"
+var
+n1: real
+Escreval ("Digite o numero:")
+leia (n1)
+se (n1 mod 2 = 0) entao
+Escreval ("Este numero é par!")
+senao
+Escreval ("Este numero é impar!")
+  se (n1 > 0) entao
+Escreval ("Este número é positivo!")
+  senao
+Escreval ("Este número é negativo!")
+  fimse
+fimse
+FimAlgoritmo
+
+5) Algoritmo "iguais"
+var
+n1, n2: real
+Inicio
+Escreval ("Digite o primeiro número:")
+leia (n1)
+Escreval ("Digite o segundo número:")
+leia (n2)
+se (n1 = n2) entao
+Escreval ("NUMEROS IGUAIS")
+Fimalgoritmo
+ senao
+ se (n1>n2) entao
+Escreval ("Número de maior valor:", n1)
+ senao
+Escreval ("Número de maior valor:", n2)
+ fimse
+fimse
+Fimalgoritmo
+
+6) Algoritmo "somaesub"
+var
+n1, n2, md: real
+Inicio
+Escreval ("Digite o 1 valor:")
+leia (n1)
+Escreval ("Digite o 2 valor:")
+leia (n2)
+se (n1 > n2) entao
+md := n1 + n2
+Escreval ("A soma dos 2 numeros é:", md)
+senao
+md := n1 - n2
+Escreval ("A subtração dos 2 números é:", md)
+fimse
+FimAlgoritmo
+
+7) Algoritmo "multiplo"
+var
+n1, n2: inteiro
+Inicio
+Escreval ("Digite o 1 valor:")
+leia (n1)
+Escreval ("Digite o 2 valor:")
+leia (n2)
+se (n1 mod 2 = 0) entao
+Escreval ("Este número é múltiplo de 2:", n1)
+senao
+Escreval ("Este número não é múltiplo de 2:", n1)
+fimse
+ se (n2 mod 2 = 0) entao
+Escreval ("Este número é múltiplo de 2:", n2)
+ senao
+Escreval ("Este número não é múltiplo de 2:", n2)
+ fimse
+Fimalgoritmo
+
+8) Algoritmo "mef"
+var
+alt, m, f, md: real
+Inicio
+Escreval ("Digite sua altura:")
+leia (alt)
+Escreval ("Digite :")
+
+9) Algoritmo "maiortres"
+var
+a, b, c: real
+Inicio
+Escreval ("Digite o 1 valor:")
+leia (a)
+Escreval ("Digite o 2 valor:")
+leia (b)
+Escreval ("Digite o 3 valor:")
+leia (c)
+se (a>b) e (a>c) entao
+Escreval ("O primeiro valor é o maior:", a)
+fimse
+se (b>a) e (b>c) entao
+Escreval ("O segundo valor é o maior:", b)
+fimse
+se (c>a) e (c>b) entao
+Escreval ("O terceiro valor é o maior:", c)
+fimse
+FimAlgoritmo
+
+10) Algoritmo "Conta"
+var
+num, saldo: real
+Inicio
+Escreval ("Escreva o numero da sua conta:")
+leia (num)
+Escreval ("Digite o seu saldo:")
+leia (saldo)
+se (saldo>0) entao
+Escreval ("Conta", num, " Saldo normal com R$", saldo)
+senao
+Escreval ("Conta", num, " Saldo estourado com R$", saldo)
+fimse
+Fimalgoritmo
+
+11) Algoritmo "picapau"
+var
+diaria, md: real
+Inicio
+Escreval ("Quantos dias você ficará?")
+leia (diaria)
+se (diaria>15) entao
+md := diaria * 1.50
+Escreval ("A taxa de serviços é de:", md)
+fimse
+se (diaria=15) entao
+md := diaria * 1.00
+Escreval ("A taxa de serviços é de:", md)
+fimse
+se (diaria<15) entao
+md := diaria * 0.50
+Escreval ("A taxa de serviços é de:", md)
+fimse
+FimAlgoritmo
+
+12)
+
+13) Algoritmo "Aluno"
+var
+n1, n2, n3, md, cdg: real
+Inicio
+Escreval ("Código do Aluno:")
+leia (cdg)
+Escreval ("Digite sua primeira nota:")
+leia (n1)
+Escreval ("Digite sua segunda nota:")
+leia (n2)
+Escreval ("Digite sua terceira nota:")
+leia (n3)
+se (n1>n2) e (n1>n3) entao
+md := ((n1*4)+(n2*3)+(n3*3))/10
+fimse
+se (n2>n1) e (n2>n3) entao
+md := ((n2*4)+(n*3)+(n3*3))/10
+fimse
+se (n3>n1) e (n3>n2) entao
+md := ((n3*4)+(n2*3)+(n*3))/10
+fimse
+se (md>5)
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, "P2:", n2*3, "P3:", n3*3)
+Escreval ("APROVADO")
+senao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, "P2:", n2*3, "P3:", n3*3)
+Escreval ("REPROVADO")
+fimse
+Fimalgoritmo
+
+--------------------------
+lgoritmo "Aluno"
+var
+n1, n2, n3, md, cdg: real
+Inicio
+Escreval ("Código do Aluno:")
+leia (cdg)
+Escreval ("Digite sua primeira nota:")
+leia (n1)
+Escreval ("Digite sua segunda nota:")
+leia (n2)
+Escreval ("Digite sua terceira nota:")
+leia (n3)
+se (n1>n2) e (n1>n3) entao
+md := (n1*4)+(n2*3)+(n3*3)/13
+se (md>5) entao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("APROVADO")
+senao
+se (md<5) entao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("REPROVADO")
+fimse
+fimse
+fimse
+se (n2>n1) e (n1>n3) entao
+md := (n2*4)+(n1*3)+(n3*3)/13
+se (md>5) entao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("APROVADO")
+senao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("REPROVADO")
+fimse
+fimse
+se (n3>n2) e (n3>n1) entao
+md := (n3*4)+(n2*3)+(n1*3)/13
+se (md>5) entao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("APROVADO")
+senao
+Escreval ("Codigo do aluno:", cdg)
+Escreval ("Notas: P1:", n1*4, " P2:", n2*3, " P3:", n3*3)
+Escreval ("REPROVADO")
+fimse
+fimse
+Fimalgoritmo
+
+
+
